@@ -1,0 +1,2 @@
+import{_ as e}from"./_plugin-vue_export-helper-1tPrXgE0.mjs";import{u as o,z as s,J as t}from"../routes/renderer.mjs";import"../runtime.mjs";const n={};const r=n.setup;n.setup=(e,s)=>{const t=o();return(t.modules||(t.modules=new Set)).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue"),r?r(e,s):void 0};const u=e(n,[["ssrRender",function(e,o,n,r){o(`<code${s(r)}>`),t(e.$slots,"default",{},null,o,n),o("</code>")}]]);export{u as default};
+//# sourceMappingURL=ProseCodeInline-DR9Rc32T.mjs.map

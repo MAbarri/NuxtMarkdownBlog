@@ -11,15 +11,14 @@ const category = computed(() => {
   else strName = name
   return strName
 })
-
-const { data } = await useAsyncData(`category-data-${category.value}`, () =>
-  queryContent('/blogs')
-    .where({ tags: { $contains: category.value } })
-    .find(),
-)
-
+console.log('category.value', category.value)
+const { data } = await useAsyncData(`category-data-${category.value}`, async () => {
+    const response = await $fetch(`/api/blogs/category/${category.value}`);
+    return response;
+});
+console.log('data', data)
 const formattedData = computed(() => {
-  return data.value?.map((articles) => {
+  return data.value?.map((articles: any) => {
     return {
       path: articles._path,
       title: articles.title || 'no-title available',

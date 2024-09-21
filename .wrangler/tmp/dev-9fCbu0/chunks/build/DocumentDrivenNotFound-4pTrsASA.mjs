@@ -1,0 +1,2 @@
+import{d as e,h as n,u as o}from"../routes/renderer.mjs";import"../runtime.mjs";const t=e({name:"DocumentDrivenNotFound",render:()=>n("div","Document not found")}),u=t.setup;t.setup=(e,n)=>{const t=o();return(t.modules||(t.modules=new Set)).add("node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenNotFound.vue"),u?u(e,n):void 0};export{t as default};
+//# sourceMappingURL=DocumentDrivenNotFound-4pTrsASA.mjs.map

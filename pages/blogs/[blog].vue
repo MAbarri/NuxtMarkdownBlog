@@ -2,9 +2,13 @@
 import type { BlogPost } from '@/types/blog'
 import { navbarData, seoData } from '~/data'
 
-const { path } = useRoute()
+const route = useRoute()
+const path = route.params.blog;
 
-const { data: articles, error } = await useAsyncData(`blog-post-${path}`, () => queryContent(path).findOne())
+const { data: articles, error } = await useAsyncData(`blog-post-${path}`, async () => {
+    const response = await $fetch(`/api/blogs/${path}`);
+    return response;
+});
 
 if (error.value)
   navigateTo('/404')

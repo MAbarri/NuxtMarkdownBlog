@@ -1,0 +1,2 @@
+import{d as e,m as a}from"../../../runtime.mjs";const t=e((async e=>{const{cloudflare:t}=e.context;if(!t||!t.env||!t.env.DB)return new Response(t,{status:500});const s=t.env.DB,{results:n}=await s.prepare("\n        SELECT * FROM blog_articles ORDER BY id DESC LIMIT 3\n    ").all();return await Promise.all(n.map((async e=>({...await a.parse("<some-id>",e.content),id:e.id}))))}));export{t as default};
+//# sourceMappingURL=recent.mjs.map

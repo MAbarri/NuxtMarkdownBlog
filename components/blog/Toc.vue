@@ -1,6 +1,9 @@
 <script setup lang="ts">
-const { path } = useRoute()
-const articles = await queryContent(path).findOne()
+
+const route = useRoute()
+const path = route.params.blog;
+
+const articles = await $fetch(`/api/blogs/${path}`);
 
 const links = articles?.body?.toc?.links || []
 </script>

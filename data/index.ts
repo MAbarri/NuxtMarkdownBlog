@@ -1,5 +1,8 @@
 export const navbarData = {
-  homeTitle: 'Riyad\'s Blog',
+  "homeTitle": 'Riyad\'s Blog',
+  "localhost": {
+    homeTitle: 'Localhosts\'s Blog',
+  }
 }
 
 export const footerData = {

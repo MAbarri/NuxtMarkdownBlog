@@ -1,0 +1,2 @@
+import{d as e}from"../../../runtime.mjs";const t=e((async e=>{const{cloudflare:t}=e.context;if(!t||!t.env||!t.env.DB)return new Response(t,{status:500});const r=t.env.DB;try{return await r.prepare("DELETE FROM blog_articles").run(),{message:"All articles deleted successfully!"}}catch(e){return{error:"Failed to delete articles: "+e.message}}}));export{t as default};
+//# sourceMappingURL=delete-all.mjs.map

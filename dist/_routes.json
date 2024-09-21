@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "include": [
+    "/*"
+  ],
+  "exclude": [
+    "/_nuxt/*",
+    "/",
+    "/_payload.json",
+    "/about",
+    "/android-chrome-192x192.png",
+    "/android-chrome-512x512.png",
+    "/apple-touch-icon.png",
+    "/blogs",
+    "/categories",
+    "/favicon-16x16.png",
+    "/favicon-32x32.png",
+    "/favicon.ico",
+    "/not-found.jpg",
+    "/riyad.jpg",
+    "/about/_payload.json",
+    "/blogs-img/blog.jpg",
+    "/blogs-img/blog1.jpg",
+    "/blogs-img/blog2.jpg",
+    "/blogs-img/blog3.jpg",
+    "/blogs-img/blog4.jpg",
+    "/blogs-img/blog5.jpg",
+    "/blogs-img/blog6.jpg",
+    "/blogs/_payload.json",
+    "/categories/_payload.json",
+    "/api/_content/cache.1726862261691.json"
+  ]
+}

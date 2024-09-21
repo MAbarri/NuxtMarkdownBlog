@@ -1,0 +1,2 @@
+import{d as t,c as e,m as s}from"../../../runtime.mjs";const n=t((async t=>{const n=t.context.params.id,{cloudflare:a}=t.context;if(!a||!a.env||!a.env.DB)return new Response(a,{status:500});const o=a.env.DB,{results:r}=await o.prepare("\n        SELECT * FROM blog_articles WHERE id = ?\n    ").bind(n).all();if(0===r.length)throw e({statusCode:404,statusMessage:"Article not found"});return{...await s.parse("<some-id>",r[0].content),id:r[0].content.id}}));export{n as default};
+//# sourceMappingURL=_id_.mjs.map

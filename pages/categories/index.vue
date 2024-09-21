@@ -1,11 +1,14 @@
 <script lang="ts" setup>
 import { makeFirstCharUpper } from '@/utils/helper'
 
-const { data } = await useAsyncData('all-blog-post-for-category', () => queryContent('/blogs').sort({ _id: -1 }).find())
+const { data } = await useAsyncData('all-blog-post-for-category', async () => {
+    const response = await $fetch('/api/blogs/category');
+    return response;
+});
 
 const allTags = new Map()
 
-data.value?.forEach((blog) => {
+data.value?.forEach((blog: any) => {
   const tags: Array<string> = blog.tags || []
   tags.forEach((tag) => {
     if (allTags.has(tag)) {

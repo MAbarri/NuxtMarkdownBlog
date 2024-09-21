@@ -46,6 +46,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    'nitro-cloudflare-dev',
     'nuxt-icon',
     '@nuxt/image',
     '@vueuse/nuxt',
@@ -57,11 +58,17 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
     '@stefanobartoletti/nuxt-social-share',
+    '@formkit/auto-animate/nuxt',
+    '@nuxthub/core'
   ],
 
   content: {
     highlight: {
       theme: 'dracula',
     },
+  },
+  hub: {
+    cache: false,
+    database: true,
   },
 })

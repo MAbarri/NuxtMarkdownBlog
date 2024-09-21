@@ -1,0 +1,2 @@
+import{_ as e}from"./_plugin-vue_export-helper-1tPrXgE0.mjs";import{u as s,z as t,J as r}from"../routes/renderer.mjs";import"../runtime.mjs";const o={};const n=o.setup;o.setup=(e,t)=>{const r=s();return(r.modules||(r.modules=new Set)).add("node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTr.vue"),n?n(e,t):void 0};const u=e(o,[["ssrRender",function(e,s,o,n){s(`<tr${t(n)}>`),r(e.$slots,"default",{},null,s,o),s("</tr>")}]]);export{u as default};
+//# sourceMappingURL=ProseTr-BrHGGdGH.mjs.map

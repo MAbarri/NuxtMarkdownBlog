@@ -1,0 +1,1 @@
+{"version":3,"file":"html-derivative.mjs","sources":["../../../../node_modules/shiki/dist/langs/html-derivative.mjs"],"sourcesContent":null,"names":["html_derivative","html","Object","freeze","displayName","injections","comment","patterns","match","name","include","begin","beginCaptures","end","endCaptures","scopeName","embeddedLangs"],"mappings":"","x_google_ignoreList":[0]}

@@ -1,0 +1,2 @@
+import{_ as e}from"./_plugin-vue_export-helper-1tPrXgE0.mjs";import{u as s,z as r}from"../routes/renderer.mjs";import"../runtime.mjs";const o={};const t=o.setup;o.setup=(e,r)=>{const o=s();return(o.modules||(o.modules=new Set)).add("node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseHr.vue"),t?t(e,r):void 0};const n=e(o,[["ssrRender",function(e,s,o,t){s(`<hr${r(t)}>`)}]]);export{n as default};
+//# sourceMappingURL=ProseHr-Bidow6pB.mjs.map

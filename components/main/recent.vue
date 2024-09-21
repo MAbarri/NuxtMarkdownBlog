@@ -1,13 +1,14 @@
 <script lang="ts" setup>
 // Get Last 6 Publish Post from the content/blog directory
-const { data } = await useAsyncData('recent-post', () =>
-  queryContent('/blogs').limit(3).sort({ _id: -1 }).find(),
-)
+const { data } = await useAsyncData('recent-post', async () => {
+    const response = await $fetch('/api/blogs/recent');
+    return response;
+});
 
 const formattedData = computed(() => {
-  return data.value?.map((articles) => {
+  return data.value?.map((articles: any) => {
     return {
-      path: articles._path,
+      path: `/blogs/${articles.id}`,
       title: articles.title || 'no-title available',
       description: articles.description || 'no-description available',
       image: articles.image || '/not-found.jpg',

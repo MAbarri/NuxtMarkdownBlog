@@ -7,13 +7,15 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "publish": "npx nuxi cleanup && npx nuxi build --preset=cloudflare_pages && npx wrangler pages deploy dist/"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.42.0",
     "@formkit/auto-animate": "^0.8.1",
     "@nuxt/content": "^2.12.1",
     "@nuxt/image": "^1.7.0",
+    "@nuxthub/core": "^0.7.19",
     "@nuxtjs/color-mode": "^3.3.2",
     "@nuxtjs/fontaine": "^0.4.1",
     "@nuxtjs/robots": "^3.0.0",
@@ -30,5 +32,14 @@
     "nuxt-og-image": "^3.0.0-rc.38",
     "typescript": "^5.3.3",
     "vue-content-loader": "^2.0.1"
-  }
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "date-fns": "^4.0.0",
+    "marked": "^14.1.2",
+    "nitro-cloudflare-dev": "^0.1.6",
+    "retry": "^0.13.1",
+    "wrangler": "^3.78.2"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

@@ -1,0 +1,10 @@
+name = "nuxt-blog-worker"
+compatibility_date = "2024-09-16"
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "blog_articles_db"
+database_id = "2fc6bf24-c4f5-42b7-afd0-c6a086bb9537"
+
+

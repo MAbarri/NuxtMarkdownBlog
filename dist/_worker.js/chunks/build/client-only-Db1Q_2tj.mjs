@@ -1,0 +1,2 @@
+import{d as a,p as l,a8 as r}from"../routes/renderer.mjs";import{a5 as e}from"../runtime.mjs";const t=Symbol.for("nuxt:client-only"),o=a({name:"ClientOnly",inheritAttrs:!1,props:["fallback","placeholder","placeholderTag","fallbackTag"],setup(a,{slots:o,attrs:n}){const s=e(!1);return l(t,!0),a=>{var l;if(s.value)return null==(l=o.default)?void 0:l.call(o);const e=o.fallback||o.placeholder;if(e)return e();const t=a.fallback||a.placeholder||"",c=a.fallbackTag||a.placeholderTag||"span";return r(c,n,t)}}});export{o as _};
+//# sourceMappingURL=client-only-Db1Q_2tj.mjs.map

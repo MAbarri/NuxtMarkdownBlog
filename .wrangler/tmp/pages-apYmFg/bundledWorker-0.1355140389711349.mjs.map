@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../../dist/_worker.js/index.js"],
+  "sourceRoot": "/Users/abarri/Desktop/workspace/blogging/nuxt/nuxt-blog/.wrangler/tmp/pages-apYmFg/bundledWorker-0.1355140389711349.mjs",
+  "sourcesContent": ["globalThis._importMeta_={url:\"file:///_entry.js\",env:{}};export{bK as default}from\"./chunks/runtime.mjs\";\n//# sourceMappingURL=index.js.map\n"],
+  "mappings": ";AAAyD,SAAa,UAAY;AAAlF,WAAW,eAAa,EAAC,KAAI,qBAAoB,KAAI,CAAC,EAAC;",
+  "names": []
+}

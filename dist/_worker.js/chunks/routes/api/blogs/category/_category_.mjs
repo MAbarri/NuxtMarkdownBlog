@@ -1,0 +1,2 @@
+import{d as e,m as t}from"../../../../runtime.mjs";const s=e((async e=>{const s=decodeURIComponent(e.context.params.category),{cloudflare:o}=e.context;if(!o||!o.env||!o.env.DB)return new Response(o,{status:500});const a=o.env.DB;console.log("Request Category : ",s);const{results:n}=await a.prepare("\n        SELECT * FROM blog_articles WHERE tags LIKE ?\n    ").bind(`%${s}%`).all();console.log("results",n);return await Promise.all(n.map((async e=>({...await t.parse("<some-id>",e.content),id:e.id}))))}));export{s as default};
+//# sourceMappingURL=_category_.mjs.map

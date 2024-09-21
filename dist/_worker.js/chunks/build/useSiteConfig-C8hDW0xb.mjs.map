@@ -1,0 +1,1 @@
+{"version":3,"file":"useSiteConfig-C8hDW0xb.mjs","sources":["../../../../node_modules/nuxt-site-config/dist/runtime/nuxt/composables/useSiteConfig.js"],"sourcesContent":null,"names":["useSiteConfig","options","stack","useRequestEvent","context","siteConfig","get","defu","resolveRefs"],"mappings":"","x_google_ignoreList":[0]}

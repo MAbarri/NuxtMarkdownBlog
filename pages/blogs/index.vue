@@ -1,14 +1,17 @@
 <script lang="ts" setup>
-const { data } = await useAsyncData('home', () => queryContent('/blogs').sort({ _id: -1 }).find())
+const { data } = await useAsyncData('home', async () => {
+    const response = await $fetch('/api/blogs/home');
+    return response;
+});
 
 const elementPerPage = ref(5)
 const pageNumber = ref(1)
 const searchTest = ref('')
 
 const formattedData = computed(() => {
-  return data.value?.map((articles) => {
+  return data.value?.map((articles: any) => {
     return {
-      path: articles._path,
+      path: `/blogs/${articles.id}`,
       title: articles.title || 'no-title available',
       description: articles.description || 'no-description available',
       image: articles.image || '/not-found.jpg',
@@ -22,7 +25,7 @@ const formattedData = computed(() => {
 })
 
 const searchData = computed(() => {
-  return formattedData.value.filter((data) => {
+  return formattedData.value.filter((data: any) => {
     const lowerTitle = data.title.toLocaleLowerCase()
     if (lowerTitle.search(searchTest.value) !== -1)
       return true
@@ -31,7 +34,7 @@ const searchData = computed(() => {
 })
 
 const paginatedData = computed(() => {
-  return searchData.value.filter((data, idx) => {
+  return searchData.value.filter((data: any, idx: any) => {
     const startInd = ((pageNumber.value - 1) * elementPerPage.value)
     const endInd = (pageNumber.value * elementPerPage.value) - 1
 

@@ -1,0 +1,2 @@
+const e='[{"title":"Blogs","_path":"/blogs","children":[{"title":"Entrepreneurship","_path":"/blogs/entrepreneurship","children":[{"title":"\\"What are the essential skills for modern entrepreneurs to thrive in today\'s dynamic business landscape, and how can aspiring business owners develop these skills to navigate an increasingly complex and competitive market?\\"","_path":"/blogs/entrepreneurship/what_are_the_essential_skil"}]}]}]';export{e as default};
+//# sourceMappingURL=content-navigation.mjs.map
