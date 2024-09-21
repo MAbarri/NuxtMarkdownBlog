@@ -2,6 +2,8 @@ name = "nuxt-blog-worker"
 compatibility_date = "2024-09-16"
 pages_build_output_dir = "dist"
 
+compatibility_flags = [ "nodejs_compat" ]
+
 [vars]
 NODE_VERSION = "20.9"
 
