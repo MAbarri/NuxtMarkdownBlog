@@ -2,6 +2,9 @@ name = "nuxt-blog-worker"
 compatibility_date = "2024-09-16"
 pages_build_output_dir = "dist"
 
+[vars]
+NODE_VERSION = "20.9"
+
 [[d1_databases]]
 binding = "DB"
 database_name = "blog_articles_db"
