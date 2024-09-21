@@ -1,6 +1,7 @@
 name = "nuxt-blog-worker"
 compatibility_date = "2024-09-16"
 pages_build_output_dir = "dist"
+node_version = "18.19.0"
 
 [[d1_databases]]
 binding = "DB"
